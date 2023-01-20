@@ -11,4 +11,16 @@ public class SimpleVisualizer
         Console.WriteLine($"{doorsArray[doorsArray.Length - 1]}");
         Console.WriteLine("==========================================");
     }
+
+    public static void ShowDoorsBinaryBool(bool[] doorsArray)
+    {
+        Console.WriteLine("==========================================");
+
+        for (int i = 0; i < doorsArray.Length - 1; i++)
+        {
+            Console.Write($"[{Convert.ToInt32(doorsArray[i])}] | ");
+        }
+        Console.WriteLine($"[{Convert.ToInt32(doorsArray[doorsArray.Length - 1])}]");
+        Console.WriteLine("==========================================");
+    }
 }

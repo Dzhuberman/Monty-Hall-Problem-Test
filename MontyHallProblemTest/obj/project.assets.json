@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\MontyHallProblemTest.csproj",
+      "projectUniqueName": "C:\\Vlad\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\MontyHallProblemTest.csproj",
       "projectName": "MontyHallProblemTest",
-      "projectPath": "C:\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\MontyHallProblemTest.csproj",
+      "projectPath": "C:\\Vlad\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\MontyHallProblemTest.csproj",
       "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\obj\\",
+      "outputPath": "C:\\Vlad\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

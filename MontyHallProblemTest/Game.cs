@@ -8,9 +8,8 @@ public class Game
 
     public int FirstPick { get; set; }
     public int SecondPick { get; set; }
-    public int SecretPick { get; set; }
 
-    private const int _defaultAmountOfDoors = 3;
+    protected const int _defaultAmountOfDoors = 3;
 
     public Game(int size)
     {
@@ -22,7 +21,7 @@ public class Game
         CreateDoors(_defaultAmountOfDoors);
     }
 
-    private void CreateDoors(int amountOfDoors)
+    protected void CreateDoors(int amountOfDoors)
     {
         Doors = new string[amountOfDoors];
         for (int i = 0; i < Doors.Length; i++)
@@ -33,7 +32,7 @@ public class Game
         GenerateRandomValues(Doors.Length);
     }
 
-    private void GenerateRandomValues(int amountOfDoors)
+    protected void GenerateRandomValues(int amountOfDoors)
     {
         Random rng = new Random();
 
@@ -45,14 +44,23 @@ public class Game
     public void OpenWrongDoor(int doorNumber)
     {
         FirstPick = doorNumber;
-        
+        GetSecondPick();
+
         for (int i = 0; i < DoorsValues.Length; i++)
         {
-            if (DoorsValues[i] == false && i != FirstPick)
-            {
+            if (DoorsValues[i] == false)
                 Doors[i] = ASCIIImage.SimpleWrongDoor;
-            }
         }
+
+        Doors[FirstPick] = ASCIIImage.SimpleClosedDoor;
+        if (DoorsValues[FirstPick] != true) return;
+
+        Random rng = new Random();
+        int randomDoor = rng.Next(0, DoorsValues.Length);
+
+        randomDoor = randomDoor > 0 ? randomDoor - 1 : randomDoor + 1;
+
+        Doors[randomDoor] = ASCIIImage.SimpleClosedDoor;
     }
 
     public void OpenDoor(int doorNumber)
@@ -78,8 +86,14 @@ public class Game
         }
     }
 
-    /*private int GetSecretDoor()
+    protected void GetSecondPick()
     {
-        
-    }*/
+        for (int i = 0; i < Doors.Length; i++)
+        {
+            if (i != FirstPick && Doors[i] == ASCIIImage.SimpleClosedDoor)
+            {
+                SecondPick = i;
+            }
+        }
+    }
 }
