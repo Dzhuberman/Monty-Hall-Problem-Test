@@ -13,12 +13,7 @@ public class AutoGame : Game
         CreateDoors(_defaultAmountOfDoors);
     }
 
-    private int GetRandomDoor()
-    {
-        Random rng = new Random();
-
-        return rng.Next(0, DoorsValues.Length);
-    }
+    private int GetRandomDoor() => rng.Next(0, DoorsValues.Length);
 
     private bool IsFirstPickTrue()
     {

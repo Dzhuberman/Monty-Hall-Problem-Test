@@ -33,17 +33,11 @@ public class InputManager
             input = String.Concat(input.Where(c => !Char.IsWhiteSpace(c)));
 
             if (input == "y")
-            {
                 return true;
-            }
             else if (input == "n")
-            {
                 return false;
-            }
             else
-            {
                 continue;
-            }
         }
     }
 }

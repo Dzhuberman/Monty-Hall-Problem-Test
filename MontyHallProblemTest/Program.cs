@@ -2,13 +2,13 @@
 {
     private static void Main(string[] args)
     {
-        PlayAutoGames(100, 10);
+        PlayManualGame();
     }
 
     private static void PlayManualGame()
     {
         Random rng = new Random();
-        Game game = new Game(10);
+        Game game = new Game();
 
         SimpleVisualizer.ShowDoors<string>(game.Doors);
         //SimpleVisualizer.ShowDoors<bool>(game.DoorsValues);
@@ -17,7 +17,7 @@
         game.OpenWrongDoor(input);
         SimpleVisualizer.ShowDoors<string>(game.Doors);
 
-        game.OpenAllDoors();
+        game.OpenDoor(InputManager.GetDiffDoor());
         SimpleVisualizer.ShowDoors<string>(game.Doors);
     }
 
