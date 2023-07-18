@@ -2,7 +2,14 @@
 {
     private static void Main(string[] args)
     {
-        PlayManualGame();
+        if (InputManager.ChooseGameType() == 1)
+        {
+            PlayManualGame();
+        }
+        else
+        {
+            PlayAutoGames(InputManager.AutoGameSettingsBuffer[0], InputManager.AutoGameSettingsBuffer[1]);
+        }
     }
 
     private static void PlayManualGame()

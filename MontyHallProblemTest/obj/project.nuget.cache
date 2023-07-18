@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PNJ7PKkmw7zdY6MJcrKYcNqpz9FuuhHKgXKZvsuZfxPc3CgZWLDSm+uGOCa32ghAXUPo+pYY/Y51z/nsz1YsIw==",
+  "dgSpecHash": "+jTnCXyxK7+VK5Oq98kxd/Qj8BEkHsrInzMXKX8bWmjN0YNPj0OkAm2P/a+S0bx4YvIbQfe7W3mVpj3OXRz+2Q==",
   "success": true,
-  "projectFilePath": "C:\\Vlad\\Projects\\C#\\Git\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\MontyHallProblemTest.csproj",
+  "projectFilePath": "C:\\Vlad\\C#\\GitHub\\Monty-Hall-Problem-Test\\MontyHallProblemTest\\MontyHallProblemTest.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
